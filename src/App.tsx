@@ -1394,58 +1394,15 @@ const useDebounce = <T,>(initialState: T, timout = 300): [T, (t: T) => void, T] 
     return [debouncedState, setInstantState, instantState];
 }
 
-const App: React.FC = () => {
+const Search = ({onChange}: {onChange : (search: string) => void}) => {
     const [debouncedSearch, setSearch, search] = useDebounce("");
 
-    const isSearchMode = debouncedSearch.length > 0;
-
-    const toShow = useMemo(() => {
-        const ret = [];
-
-        console.log("SEARCH RUNNING")
-
-        for (const subject of SUBJECTS) {
-            const razredi = [];
-
-            for (const razred of subject.razredi) {
-                const gradivo = [];
-
-                for (const g of razred.gradivo) {
-                    const games = g.games.filter((game) => {
-                        return (game.name.toLowerCase()+game.description.toLowerCase()).includes(debouncedSearch.toLowerCase());
-                    });
-
-                    if (games.length > 0) {
-                        gradivo.push({name: g.name, games});
-                    }
-                }
-
-                if (gradivo.length > 0) {
-                    razredi.push({name: razred.name, gradivo});
-                }
-            }
-
-            if (razredi.length > 0) {
-                ret.push({name: subject.name, razredi});
-            }
-        }
-
-        return ret;
-    }, [debouncedSearch]);
+    useEffect(() => {
+        onChange(debouncedSearch);
+    }, [debouncedSearch, onChange]);
 
     return (
-        <ThemeProvider theme={theme}>
-            <CssBaseline/>
-            <Container maxWidth="lg" sx={{py: 4}}>
-                <Typography variant="h3" align="center" gutterBottom>
-                    Edukacijske Igre po Razredima i Gradivu
-                </Typography>
-                <Typography variant="subtitle1" align="center" paragraph>
-                    Kliknite na predmet, zatim odaberite razred i gradivo kako biste pronašli
-                    pripadajuće igre, simulacije i kvizove.
-                </Typography>
-
-                <TextField
+        <TextField
                     label={"Pretraži igre"}
                     variant="outlined"
                     fullWidth
@@ -1465,6 +1422,59 @@ const App: React.FC = () => {
                         },
                     }}
                 />
+    );
+}
+
+const App: React.FC = () => {
+    const [search, setSearch] = useState("");
+
+    const isSearchMode = search.length > 0;
+
+    const toShow = useMemo(() => {
+        const ret = [];
+
+        for (const subject of SUBJECTS) {
+            const razredi = [];
+
+            for (const razred of subject.razredi) {
+                const gradivo = [];
+
+                for (const g of razred.gradivo) {
+                    const games = g.games.filter((game) => {
+                        return (game.name.toLowerCase()+game.description.toLowerCase()).includes(search.toLowerCase());
+                    });
+
+                    if (games.length > 0) {
+                        gradivo.push({name: g.name, games});
+                    }
+                }
+
+                if (gradivo.length > 0) {
+                    razredi.push({name: razred.name, gradivo});
+                }
+            }
+
+            if (razredi.length > 0) {
+                ret.push({name: subject.name, razredi});
+            }
+        }
+
+        return ret;
+    }, [search]);
+
+    return (
+        <ThemeProvider theme={theme}>
+            <CssBaseline/>
+            <Container maxWidth="lg" sx={{py: 4}}>
+                <Typography variant="h3" align="center" gutterBottom>
+                    Edukacijske Igre po Razredima i Gradivu
+                </Typography>
+                <Typography variant="subtitle1" align="center" paragraph>
+                    Kliknite na predmet, zatim odaberite razred i gradivo kako biste pronašli
+                    pripadajuće igre, simulacije i kvizove.
+                </Typography>
+
+                <Search onChange={setSearch}/>
 
                 {toShow.map((subject) => (
                     <SubjectPanel key={subject.name} name={subject.name} razredi={subject.razredi} isSearchMode={isSearchMode}/>
