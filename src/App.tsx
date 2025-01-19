@@ -1246,6 +1246,772 @@ const SUBJECTS: TSubject[] = [
             },
         ],
     },
+    {
+        name: "Kemija",
+        razredi: [
+            {
+                name: "1. Razred",
+                gradivo: [
+                    {
+                        name: "Virtualni laboratorij",
+                        games: [
+                            {
+                                name: "ChemCollective Virtual Labs",
+                                link: "https://chemcollective.org/vlabs",
+                                description: "Virtualni laboratorij koji omogućuje izvođenje raznih kemijskih eksperimenata, uključujući titracije i reakcije.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Stanja tvari",
+                        games: [
+                            {
+                                name: "States of Matter Basics (PhET)",
+                                link: "https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics_all.html",
+                                description: "Simulacija koja prikazuje kako čvrsta, tekuća i plinovita stanja ovise o temperaturi i pritisku.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Topljivost",
+                        games: [
+                            {
+                                name: "Solubility - ChemCollective",
+                                link: "https://chemcollective.org/solubility",
+                                description: "Alati i simulacije za istraživanje topljivosti tvari u vodi i utjecaja faktora poput temperature.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "2. Razred",
+                gradivo: [
+                    {
+                        name: "Kiseline i baze",
+                        games: [
+                            {
+                                name: "Acid-Base Chemistry - ChemCollective",
+                                link: "https://chemcollective.org/acid-base",
+                                description: "Simulacije koje objašnjavaju kiseline, baze i koncept pH vrijednosti.",
+                            },
+                            {
+                                name: "Acid-Base Solutions (PhET)",
+                                link: "https://phet.colorado.edu/en/simulation/acid-base-solutions",
+                                description: "Simulacija za istraživanje ponašanja kiselina i baza u otopinama.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Kemijska ravnoteža",
+                        games: [
+                            {
+                                name: "Equilibrium - ChemCollective",
+                                link: "https://chemcollective.org/equilib",
+                                description: "Interaktivne aktivnosti za proučavanje kemijske ravnoteže i Le Chatelierova principa.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Kemijska kinetika",
+                        games: [
+                            {
+                                name: "Kinetics - ChemCollective",
+                                link: "https://chemcollective.org/kinetics",
+                                description: "Simulacije za razumijevanje kemijske kinetike, uključujući brzinu reakcija i faktore koji na nju utječu.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "3. Razred",
+                gradivo: [
+                    {
+                        name: "Stoehiometrija",
+                        games: [
+                            {
+                                name: "Stoichiometry - ChemCollective",
+                                link: "https://chemcollective.org/stoichiometry",
+                                description: "Interaktivni alati i zadaci za učenje stoehiometrije. Pomaže učenicima razumjeti odnose među kemijskim reaktantima i proizvodima.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Redoks reakcije",
+                        games: [
+                            {
+                                name: "Oxidation-Reduction - ChemCollective",
+                                link: "https://chemcollective.org/oxredux",
+                                description: "Simulacije za razumijevanje redoks reakcija i njihovih primjena.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Plinski zakoni",
+                        games: [
+                            {
+                                name: "Gas Properties (PhET)",
+                                link: "https://phet.colorado.edu/en/simulation/gas-properties",
+                                description: "Simulacija za proučavanje plinskih zakona i njihovih odnosa (Boyleov, Charlesov zakon).",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "4. Razred",
+                gradivo: [
+                    {
+                        name: "Termodinamika",
+                        games: [
+                            {
+                                name: "Thermodynamics - ChemCollective",
+                                link: "https://chemcollective.org/thermo",
+                                description: "Simulacije i zadaci koji objašnjavaju principe termodinamike, poput entalpije i entropije.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Balansiranje jednadžbi",
+                        games: [
+                            {
+                                name: "Balancing Chemical Equations (PhET)",
+                                link: "https://phet.colorado.edu/en/simulations/balancing-chemical-equations",
+                                description: "Simulacija za vježbanje uravnoteživanja kemijskih jednadžbi.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Izotopi i atomska masa",
+                        games: [
+                            {
+                                name: "Isotopes and Atomic Mass (PhET)",
+                                link: "https://phet.colorado.edu/en/simulation/isotopes-and-atomic-mass",
+                                description: "Simulacija koja objašnjava koncept izotopa i izračunavanje atomske mase.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Molekulski polaritet",
+                        games: [
+                            {
+                                name: "Molecule Polarity (PhET)",
+                                link: "https://phet.colorado.edu/en/simulations/molecule-polarity",
+                                description: "Simulacija koja pomaže u učenju polariteta molekula i elektronegativnosti.",
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        name: "Biologija",
+        razredi: [
+            {
+                name: "1. Razred",
+                gradivo: [
+                    {
+                        name: "Stanice",
+                        games: [
+                            {
+                                name: "Cells Games - BioMan Biology",
+                                link: "https://biomanbio.com/HTML5GamesandLabs/Cellgames/Cells.html",
+                                description: "Interaktivne igre koje pomažu učenicima učiti o građi i funkcijama stanica, uključujući stanične organele i procese poput transporta tvari.",
+                            },
+                            {
+                                name: "CellCraft",
+                                link: "https://cellcraftgame.com/",
+                                description: "Igra u kojoj učenici upravljaju funkcijama stanice, poput stvaranja proteina i obrane od virusa.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Biokemija",
+                        games: [
+                            {
+                                name: "Life Chemistry Games - BioMan Biology",
+                                link: "https://biomanbio.com/HTML5GamesandLabs/LifeChemgames/lifechem.html",
+                                description: "Igre o osnovama biokemije, poput molekula života (ugljikohidrati, lipidi, proteini i nukleinske kiseline).",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Fotosinteza i disanje",
+                        games: [
+                            {
+                                name: "Photosynthesis and Respiration Games - BioMan Biology",
+                                link: "https://biomanbio.com/HTML5GamesandLabs/PhotoRespgames/photoresp.html",
+                                description: "Igre za razumijevanje procesa fotosinteze i staničnog disanja.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "2. Razred",
+                gradivo: [
+                    {
+                        name: "Genetika",
+                        games: [
+                            {
+                                name: "Genetics Games - BioMan Biology",
+                                link: "https://biomanbio.com/HTML5GamesandLabs/Genegames/genetics.html",
+                                description: "Igre za učenje genetike, uključujući nasljeđivanje, Mendelove zakone i analizu rodoslovlja.",
+                            },
+                            {
+                                name: "Gene Expression Essentials (PhET)",
+                                link: "https://phet.colorado.edu/sims/html/gene-expression-essentials/latest/gene-expression-essentials_all.html",
+                                description: "Simulacija koja objašnjava proces ekspresije gena i sintezu proteina.",
+                            },
+                            {
+                                name: "NOVA RNA Lab",
+                                link: "https://www.pbs.org/wgbh/nova/labs//lab/rna/research#/vlab/home",
+                                description: "Interaktivna simulacija koja objašnjava strukturu i funkciju RNA molekula.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Fiziologija",
+                        games: [
+                            {
+                                name: "Physiology Games - BioMan Biology",
+                                link: "https://biomanbio.com/HTML5GamesandLabs/Physiologygames/physiology.html",
+                                description: "Igre za učenje ljudske fiziologije, uključujući rad srca, pluća i probavnog sustava.",
+                            },
+                            {
+                                name: "The Blood Typing Game (Nobel Prize)",
+                                link: "https://www.nobelprize.org/educational/medicine/bloodtypinggame/",
+                                description: "Interaktivna igra koja uči o krvnim grupama i procesu transfuzije krvi.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "3. Razred",
+                gradivo: [
+                    {
+                        name: "Evolucija",
+                        games: [
+                            {
+                                name: "Evolution Games - BioMan Biology",
+                                link: "https://biomanbio.com/HTML5GamesandLabs/EvoClassGames/evolution.html",
+                                description: "Igre i simulacije vezane uz evoluciju, prirodnu selekciju i prilagodbe organizama.",
+                            },
+                            {
+                                name: "Natural Selection (PhET)",
+                                link: "https://phet.colorado.edu/en/simulation/legacy/natural-selection",
+                                description: "Simulacija koja prikazuje kako prirodna selekcija oblikuje populacije organizama.",
+                            },
+                            {
+                                name: "NOVA Evolution Lab",
+                                link: "https://www.pbs.org/wgbh/nova/labs//lab/evolution/research#/chooser",
+                                description: "Interaktivna simulacija evolucije kroz prirodnu selekciju i filogeniju.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Ekologija",
+                        games: [
+                            {
+                                name: "Ecology Games - BioMan Biology",
+                                link: "https://biomanbio.com/HTML5GamesandLabs/EcoGames/ecology.html",
+                                description: "Igre koje pokrivaju ekološke teme poput energetskih piramida, hranidbenih lanaca i odnosa u ekosustavima.",
+                            },
+                            {
+                                name: "PhyloGame",
+                                link: "http://phylogame.org/",
+                                description: "Kartaška igra koja educira o biološkoj raznolikosti i ekosustavima.",
+                            },
+                            {
+                                name: "Biology Simulations",
+                                link: "https://www.biologysimulations.com/simulations",
+                                description: "Kolekcija simulacija koje pokrivaju teme poput populacijske genetike, evolucije i ekosustava.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "4. Razred",
+                gradivo: [
+                    {
+                        name: "Znanstvena metoda",
+                        games: [
+                            {
+                                name: "Scientific Method Games - BioMan Biology",
+                                link: "https://biomanbio.com/HTML5GamesandLabs/SciMethodGames/scimethod.html",
+                                description: "Igre za učenje znanstvenog metoda, uključujući eksperimentiranje i analizu podataka.",
+                            },
+                            {
+                                name: "Gizmo - ExploreLearning",
+                                link: "https://gizmos.explorelearning.com/find-gizmos/launch-gizmo?resourceId=635",
+                                description: "Platforma s raznim simulacijama za učenje o staničnim procesima, genetici i ekosustavima.",
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        name: "Povijest",
+        razredi: [
+            {
+                name: "1. Razred",
+                gradivo: [
+                    {
+                        name: "Drevne civilizacije",
+                        games: [
+                            {
+                                name: "World History Atlas",
+                                link: "https://worldhist.org/",
+                                description: "Nudi pregled povijesnih događaja kroz interaktivne mape koje sadrže kratku povijest o državama i regijama koje istražujemo.",
+                            },
+                            {
+                                name: "Wordwall - Povijesne igre",
+                                link: "https://wordwall.net/hr-hr/community/povijest/5-razred-olimpijske-igre",
+                                description: "Platforma za interaktivne povijesne kvizove, igre i aktivnosti.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Stara Grčka",
+                        games: [
+                            {
+                                name: "Vremenska crta starogrčke povijesti",
+                                link: "https://www.teachingandlearningresources.co.uk/greektimeline.html",
+                                description: "Interaktivna vremenska crta pruža pregled ključnih događaja u starogrčkoj povijesti.",
+                            },
+                            {
+                                name: "Jeopardy igra: Pregled starogrčke povijesti",
+                                link: "https://jeopardylabs.com/play/ancient-greece-review-game-1",
+                                description: "Online verzija popularne igre Jeopardy fokusira se na pitanja vezana uz staru Grčku.",
+                            },
+                            {
+                                name: "Kviz o staroj Grčkoj",
+                                link: "https://www.teachingandlearningresources.co.uk/greeksquiz.shtml",
+                                description: "Kviz koji provjerava znanje o različitim aspektima starogrčke povijesti.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Perzijsko Carstvo",
+                        games: [
+                            {
+                                name: "Jeopardy igra: Perzijsko Carstvo",
+                                link: "https://jeopardylabs.com/play/persian-empire",
+                                description: "Jeopardy igra fokusirana na povijest Perzijskog Carstva.",
+                            },
+                            {
+                                name: "Battleship: Perzijsko Carstvo",
+                                link: "https://www.quia.com/ba/65253.html",
+                                description: "Kombinirajući klasičnu igru 'Potapanje brodova' s pitanjima o Perzijskom Carstvu.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "2. Razred",
+                gradivo: [
+                    {
+                        name: "Rimsko Carstvo",
+                        games: [
+                            {
+                                name: "Križić-kružić: Rimljani",
+                                link: "https://schoolhistory.co.uk/games/the-romans-noughts-and-crosses-game/",
+                                description: "Verzija igre 'križić-kružić' s pitanjima o Rimskom Carstvu.",
+                            },
+                            {
+                                name: "Trivia Fling: Rimljani",
+                                link: "https://schoolhistory.co.uk/games/roman-trivia-fling-teacher-game/",
+                                description: "Trivia igra s pitanjima o Rimskom Carstvu.",
+                            },
+                            {
+                                name: "Kviz: Poglavlje 13 - Rim",
+                                link: "https://www.quia.com/jg/122300list.html",
+                                description: "Kviz s pitanjima o rimskim carevima, vojnoj strategiji i svakodnevnom životu Rimljana.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Drevni Egipat",
+                        games: [
+                            {
+                                name: "Kviz: Povijest drevnog Egipta",
+                                link: "https://www.historyforkids.net/quiz/egyptian-history.html/",
+                                description: "Kviz koji pokriva povijest Egipta, od prvih dinastija do pada posljednjih faraona.",
+                            },
+                            {
+                                name: "Kviz: Egipatska znanost",
+                                link: "https://www.historyforkids.net/quiz/egyptian-science-quiz.html/",
+                                description: "Fokus na znanstvena postignuća Egipta, uključujući astronomiju, medicinu i tehnologiju.",
+                            },
+                            {
+                                name: "Jeopardy: Drevni Egipat",
+                                link: "https://jeopardylabs.com/play/ancient-egypt67",
+                                description: "Jeopardy igra s pitanjima o povijesti, kulturi i znanosti drevnog Egipta.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "3. Razred",
+                gradivo: [
+                    {
+                        name: "Srednji vijek",
+                        games: [
+                            {
+                                name: "Bitke srednjeg vijeka: Aktivnost za djecu",
+                                link: "https://www.rct.uk/resources/bring-on-the-battle-childrens-activity",
+                                description: "Simulacija bitaka srednjeg vijeka, omogućuje razumijevanje strategija i izazova vojnih sukoba.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Renašansa i otkrića",
+                        games: [
+                            {
+                                name: "Vremenska crta istraživača",
+                                link: "https://mrnussbaum.com/explorers-timeline",
+                                description: "Interaktivna vremenska crta koja prikazuje ključne ekspedicije i istraživače.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "4. Razred",
+                gradivo: [
+                    {
+                        name: "Prvi svjetski rat",
+                        games: [
+                            {
+                                name: "Over the Top – Interaktivna avantura",
+                                link: "https://www.warmuseum.ca/overthetop/game/",
+                                description: "Igra koja simulira život u rovovima tijekom Prvog svjetskog rata.",
+                            },
+                            {
+                                name: "Vremenska crta Prvog svjetskog rata – MrNussbaum",
+                                link: "https://mrnussbaum.com/world-war-i-timeline-game",
+                                description: "Interaktivna vremenska crta ključnih događaja Prvog svjetskog rata.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Drugi svjetski rat",
+                        games: [
+                            {
+                                name: "Drugi svjetski rat – TinyTap",
+                                link: "https://www.tinytap.com/activities/g1erd/play/world-war-ii",
+                                description: "Interaktivna lekcija o ključnim događajima i bitkama Drugog svjetskog rata.",
+                            },
+                            {
+                                name: "Kviz: Karta Drugog svjetskog rata",
+                                link: "https://www.purposegames.com/game/world-war-ii-map-quiz",
+                                description: "Kviz koji testira znanje o geografiji Drugog svjetskog rata.",
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        name: "Njemački",
+        razredi: [
+            {
+                name: "1. Razred",
+                gradivo: [
+                    {
+                        name: "Osnovni vokabular",
+                        games: [
+                            {
+                                name: "Digital Dialects: German",
+                                link: "https://www.digitaldialects.com/German.htm",
+                                description: "Interaktivna platforma koja nudi razne igre i aktivnosti za učenje osnovnog vokabulara i gramatike njemačkog jezika.",
+                            },
+                            {
+                                name: "Babadum",
+                                link: "https://babadum.com/play/?lang=3&game=1",
+                                description: "Vizualno privlačna platforma za učenje njemačkog vokabulara kroz slike i jednostavne igre prepoznavanja riječi.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Boje i brojevi",
+                        games: [
+                            {
+                                name: "German Games",
+                                link: "https://www.german-games.net/",
+                                description: "Web stranica koja pruža besplatne igre za učenje tema poput boja, brojeva i svakodnevnih fraza.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "2. Razred",
+                gradivo: [
+                    {
+                        name: "Osnovne fraze",
+                        games: [
+                            {
+                                name: "German Games",
+                                link: "https://www.german-games.net/",
+                                description: "Igre koje pokrivaju osnovne fraze i svakodnevne izraze za početnike.",
+                            },
+                            {
+                                name: "Duolingo: Učenje njemačkog jezika",
+                                link: "https://www.duolingo.com/learn",
+                                description: "Popularna platforma za učenje njemačkog jezika kroz vježbe slušanja, čitanja i pisanja.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Osnovna gramatika",
+                        games: [
+                            {
+                                name: "Grammatikspiele: Njemačka gramatika kroz igre",
+                                link: "https://www.grammatikdeutsch.de/html/grammatikspiele.html",
+                                description: "Stranica za učenje osnovne njemačke gramatike kroz interaktivne igre.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "3. Razred",
+                gradivo: [
+                    {
+                        name: "Napredna gramatika",
+                        games: [
+                            {
+                                name: "Grammatikspiele: Njemačka gramatika kroz igre",
+                                link: "https://www.grammatikdeutsch.de/html/grammatikspiele.html",
+                                description: "Napredne igre za učenje njemačke gramatike, uključujući zadatke s padežima i glagolima.",
+                            },
+                            {
+                                name: "Duolingo: Učenje njemačkog jezika",
+                                link: "https://www.duolingo.com/learn",
+                                description: "Napredne lekcije kroz kratke igre i kvizove s fokusom na gramatiku i vokabular.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Proširenje vokabulara",
+                        games: [
+                            {
+                                name: "Babadum",
+                                link: "https://babadum.com/play/?lang=3&game=1",
+                                description: "Platforma za proširenje vokabulara kroz slike i igre, pogodna za srednje napredne učenike.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "4. Razred",
+                gradivo: [
+                    {
+                        name: "Napredne fraze i izrazi",
+                        games: [
+                            {
+                                name: "German Games",
+                                link: "https://www.german-games.net/",
+                                description: "Igre za učenje složenijih fraza i svakodnevnih izraza.",
+                            },
+                            {
+                                name: "Duolingo: Učenje njemačkog jezika",
+                                link: "https://www.duolingo.com/learn",
+                                description: "Napredne aktivnosti za učenje složenih fraza i gramatike.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Gramatika u kontekstu",
+                        games: [
+                            {
+                                name: "Grammatikspiele: Njemačka gramatika kroz igre",
+                                link: "https://www.grammatikdeutsch.de/html/grammatikspiele.html",
+                                description: "Interaktivne igre koje pomažu učenicima primijeniti gramatiku u stvarnim situacijama.",
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        name: "Geografija",
+        razredi: [
+            {
+                name: "1. Razred",
+                gradivo: [
+                    {
+                        name: "Reljef i oblici kopna",
+                        games: [
+                            {
+                                name: "Landforms Quiz (ProProfs)",
+                                link: "https://www.proprofs.com/quiz-school/story.php?title=landforms-quiz",
+                                description: "Kviz o različitim oblicima reljefa, uključujući planine, doline i visoravni.",
+                            },
+                            {
+                                name: "Geography 101: Landforms (ProProfs)",
+                                link: "https://www.proprofs.com/quiz-school/story.php?title=1dq-geography-101-landforms",
+                                description: "Uvodni kviz o formiranju oblika kopna, s fokusom na procese koji stvaraju planine i doline.",
+                            },
+                            {
+                                name: "Mountains Quiz (The Guardian)",
+                                link: "https://www.theguardian.com/travel/2020/may/29/take-a-peak-at-our-mountains-quiz",
+                                description: "Kviz o poznatim svjetskim planinama i njihovim zanimljivostima.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Rijeke, jezera i vodena tijela",
+                        games: [
+                            {
+                                name: "Rivers Quiz (Fact Monster)",
+                                link: "https://www.factmonster.com/take-quiz/rivers",
+                                description: "Kviz o najvećim svjetskim rijekama, njihovim pritokama i povijesnom značaju.",
+                            },
+                            {
+                                name: "World Lakes Quiz (World Geography Games)",
+                                link: "https://world-geography-games.com/en/world_lakes.html",
+                                description: "Interaktivna igra o najvećim svjetskim jezerima, njihovoj lokaciji i značaju.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "2. Razred",
+                gradivo: [
+                    {
+                        name: "Klima i atmosferski fenomeni",
+                        games: [
+                            {
+                                name: "Vrste klima (PurposeGames)",
+                                link: "https://www.purposegames.com/game/vrste-klima-kind-of-climates-quiz",
+                                description: "Kviz o globalnim klimatskim zonama i njihovim karakteristikama.",
+                            },
+                            {
+                                name: "Ruza vjetrova u Hrvatskoj (PurposeGames)",
+                                link: "https://www.purposegames.com/game/ruza-vjetrova-u-hrvatskoj-quiz",
+                                description: "Kviz o smjerovima i utjecaju vjetrova na područje Hrvatske.",
+                            },
+                            {
+                                name: "Atmosphere Puzzle (Planeta42)",
+                                link: "https://planeta42.com/geography/atmospherepuzzle/",
+                                description: "Slagalica o slojevima atmosfere i njihovim funkcijama.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Tektonske ploče i geologija",
+                        games: [
+                            {
+                                name: "Tektonske ploče: Svjetska karta (PurposeGames)",
+                                link: "https://www.purposegames.com/game/tectonic-plate-boundaries-world-map/hr",
+                                description: "Kviz o granicama tektonskih ploča i njihovom utjecaju na reljef.",
+                            },
+                            {
+                                name: "Types of Plutonic Rocks (PurposeGames)",
+                                link: "https://www.purposegames.com/game/types-of-plutonic-rocks-quiz/hr",
+                                description: "Kviz o vrstama plutonskih stijena i njihovoj ulozi u geološkim procesima.",
+                            },
+                            {
+                                name: "Pangea Puzzle (Planeta42)",
+                                link: "https://planeta42.com/geography/pangaeapuzzle/",
+                                description: "Slagalica o razdvajanju superkontinenta Pangee.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "3. Razred",
+                gradivo: [
+                    {
+                        name: "Povijest planeta i astronomija",
+                        games: [
+                            {
+                                name: "Earth Structure Game (Planeta42)",
+                                link: "https://planeta42.com/geography/earthstructure/",
+                                description: "Igra o unutrašnjoj građi Zemlje, uključujući kore, plašt i jezgru.",
+                            },
+                            {
+                                name: "Galaxy Types (Planeta42)",
+                                link: "https://planeta42.com/astronomy/galaxytypes/",
+                                description: "Istraživanje tipova galaksija kroz interaktivnu slagalicu.",
+                            },
+                            {
+                                name: "Solar Puzzle (Planeta42)",
+                                link: "https://planeta42.com/astronomy/solarPuzzle/",
+                                description: "Slagalica o strukturi Sunčevog sustava i rasporedu planeta.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Opća geografija",
+                        games: [
+                            {
+                                name: "Geoguessr: Globalna geografija",
+                                link: "https://www.geoguessr.com/",
+                                description: "Igra koja testira geografsko znanje prepoznavanjem lokacija na panoramskim slikama.",
+                            },
+                            {
+                                name: "Geoguessr: Priobalne regije",
+                                link: "https://www.geoguessr.com/vgp/3245",
+                                description: "Verzija igre Geoguessr fokusirana na priobalne regije.",
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                name: "4. Razred",
+                gradivo: [
+                    {
+                        name: "Reljef i vanjski procesi",
+                        games: [
+                            {
+                                name: "Vanjski procesi reljefa (PurposeGames)",
+                                link: "https://www.purposegames.com/game/vanjski-procesi-reljefa-external-relief-processes",
+                                description: "Kviz o procesima erozije, taloženja i formiranja reljefa.",
+                            },
+                            {
+                                name: "Landform Review (JeopardyLabs)",
+                                link: "https://jeopardylabs.com/play/landform-review-14",
+                                description: "Jeopardy igra za ponavljanje oblika reljefa, uključujući visoravni, doline i kanjone.",
+                            },
+                        ],
+                    },
+                    {
+                        name: "Rijeke i vodeni tokovi",
+                        games: [
+                            {
+                                name: "Morske struje u svijetu (PurposeGames)",
+                                link: "https://www.purposegames.com/game/morske-struje-u-svijetu-marine-currents",
+                                description: "Kviz o glavnim morskim strujama i njihovoj ulozi u klimatskim procesima.",
+                            },
+                            {
+                                name: "Rijeke Europe (PurposeGames)",
+                                link: "https://www.purposegames.com/game/rijeke-europeigra-na-hrvatskom-jeziku-game",
+                                description: "Interaktivni kviz za prepoznavanje glavnih rijeka Europe.",
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+
 ];
 
 // ------------------ COMPONENTS ------------------
@@ -1467,7 +2233,7 @@ const App: React.FC = () => {
             <CssBaseline/>
             <Container maxWidth="lg" sx={{py: 4}}>
                 <Typography variant="h3" align="center" gutterBottom>
-                    Edukacijske Igre po Razredima i Gradivu
+                    Igre po Razredima i Gradivu
                 </Typography>
                 <Typography variant="subtitle1" align="center" paragraph>
                     Kliknite na predmet, zatim odaberite razred i gradivo kako biste pronašli
