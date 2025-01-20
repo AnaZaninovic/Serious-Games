@@ -11,12 +11,14 @@ import {
     IconButton,
     Typography,
     Box,
-    Button, TextField, InputAdornment,
+    Button, TextField, InputAdornment, Stack,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
+import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
+import UnfoldLessIcon from '@mui/icons-material/UnfoldLess';
 
 // ------------------ DATA MODELS ------------------
 type TGame = {
@@ -72,7 +74,7 @@ const SUBJECTS: TSubject[] = [
                             {
                                 name: "Prilagodljivost",
                                 description: "Većina serious gamesa omogućuje prilagodbu različitim potrebama učenika. Igre mogu biti postavljene na različite razine težine, pružajući odgovarajući izazov svim učenicima bez obzira na njihov početni nivo. Također, igre mogu biti dizajnirane tako da podržavaju različite stilove učenja."
-                            },                            
+                            },
                         ],
                     },
                     {
@@ -128,7 +130,7 @@ const SUBJECTS: TSubject[] = [
                                 link: "http://www.educationalgamesresearch.com/",
                                 description: "Webinari, materijali za nastavnike i članci o metodama učenja uz igre."
                             },
-                            
+
                         ],
                     },
                     {
@@ -347,10 +349,10 @@ const SUBJECTS: TSubject[] = [
                     }
                 ]
             }
-            
+
         ],
     },
-    {                    
+    {
         name: "Fizika",
         razredi: [
             {
@@ -2331,8 +2333,8 @@ const GradivoPanel: React.FC<TGradivo> = ({name, games, isSearchMode}) => {
                     </Typography>
                 }
                 action={
-                    <IconButton onClick={() => setOpen(!open)}>
-                        {open || isSearchMode? <KeyboardArrowUpIcon/> : <ExpandMoreIcon/>}
+                    isSearchMode ? null : <IconButton onClick={() => setOpen(!open)}>
+                        {open || isSearchMode ? <KeyboardArrowUpIcon/> : <ExpandMoreIcon/>}
                     </IconButton>
                 }
             />
@@ -2382,7 +2384,7 @@ const RazredPanel: React.FC<TRazred> = ({name, gradivo, isSearchMode}) => {
                     </Typography>
                 }
                 action={
-                    <IconButton onClick={() => setOpen(!open)}>
+                    isSearchMode ? null : <IconButton onClick={() => setOpen(!open)}>
                         {open || isSearchMode ? <KeyboardArrowUpIcon/> : <ExpandMoreIcon/>}
                     </IconButton>
                 }
@@ -2401,6 +2403,7 @@ const RazredPanel: React.FC<TRazred> = ({name, gradivo, isSearchMode}) => {
 /** LEVEL 1: RAZREDI for a given Subject */
 const SubjectPanel: React.FC<TSubject> = ({name, razredi, isSearchMode}) => {
     const [open, setOpen] = useState(false);
+    const [openAll, setOpenAll] = useState(false);
 
     return (
         <Card variant="outlined" sx={{mb: 3}}>
@@ -2415,15 +2418,21 @@ const SubjectPanel: React.FC<TSubject> = ({name, razredi, isSearchMode}) => {
                     </Typography>
                 }
                 action={
-                    <IconButton onClick={() => setOpen(!open)}>
-                        {open || isSearchMode ? <KeyboardArrowUpIcon/> : <ExpandMoreIcon/>}
-                    </IconButton>
+                    isSearchMode ? null : <Stack direction="row" spacing={2}>
+                        <IconButton onClick={() => setOpenAll(!openAll)}>
+                            {openAll ? <UnfoldLessIcon/> : <UnfoldMoreIcon/>}
+                        </IconButton>
+                        {!openAll && <IconButton onClick={() => setOpen(!open)}>
+                            {open || isSearchMode ? <KeyboardArrowUpIcon/> : <ExpandMoreIcon/>}
+                        </IconButton>}
+                    </Stack>
                 }
             />
-            <Collapse in={open || isSearchMode}>
+            <Collapse in={open || isSearchMode || openAll}>
                 <CardContent>
                     {razredi.map((razred, idx) => (
-                        <RazredPanel key={idx} name={razred.name} gradivo={razred.gradivo} isSearchMode={isSearchMode}/>
+                        <RazredPanel key={idx} name={razred.name} gradivo={razred.gradivo}
+                                     isSearchMode={isSearchMode || openAll}/>
                     ))}
                 </CardContent>
             </Collapse>
@@ -2441,7 +2450,7 @@ const theme = createTheme({
     },
 });
 
-const useDebounce = <T,>(initialState: T, timout = 300): [T, (t: T) => void, T] => {
+const useDebounce = <T, >(initialState: T, timout = 300): [T, (t: T) => void, T] => {
     const [instantState, setInstantState] = useState<T>(initialState);
     const [debouncedState, setDebouncedState] = useState<T>(initialState);
 
@@ -2458,7 +2467,7 @@ const useDebounce = <T,>(initialState: T, timout = 300): [T, (t: T) => void, T] 
     return [debouncedState, setInstantState, instantState];
 }
 
-const Search = ({onChange}: {onChange : (search: string) => void}) => {
+const Search = ({onChange}: { onChange: (search: string) => void }) => {
     const [debouncedSearch, setSearch, search] = useDebounce("");
 
     useEffect(() => {
@@ -2467,25 +2476,25 @@ const Search = ({onChange}: {onChange : (search: string) => void}) => {
 
     return (
         <TextField
-                    label={"Pretraži igre"}
-                    variant="outlined"
-                    fullWidth
-                    margin="normal"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                    slotProps={{
-                        input: {
-                            startAdornment: <InputAdornment position="start"><SearchIcon/></InputAdornment>,
-                            endAdornment: search.length > 0 && (
-                                <InputAdornment position="end">
-                                    <IconButton onClick={() => setSearch("")}>
-                                        <CloseIcon/>
-                                    </IconButton>
-                                </InputAdornment>
-                            ),
-                        },
-                    }}
-                />
+            label={"Pretraži igre"}
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            slotProps={{
+                input: {
+                    startAdornment: <InputAdornment position="start"><SearchIcon/></InputAdornment>,
+                    endAdornment: search.length > 0 && (
+                        <InputAdornment position="end">
+                            <IconButton onClick={() => setSearch("")}>
+                                <CloseIcon/>
+                            </IconButton>
+                        </InputAdornment>
+                    ),
+                },
+            }}
+        />
     );
 }
 
@@ -2505,7 +2514,7 @@ const App: React.FC = () => {
 
                 for (const g of razred.gradivo) {
                     const games = g.games.filter((game) => {
-                        return (game.name.toLowerCase()+game.description.toLowerCase()).includes(search.toLowerCase());
+                        return (game.name.toLowerCase() + game.description.toLowerCase()).includes(search.toLowerCase());
                     });
 
                     if (games.length > 0) {
@@ -2541,7 +2550,8 @@ const App: React.FC = () => {
                 <Search onChange={setSearch}/>
 
                 {toShow.map((subject) => (
-                    <SubjectPanel key={subject.name} name={subject.name} razredi={subject.razredi} isSearchMode={isSearchMode}/>
+                    <SubjectPanel key={subject.name} name={subject.name} razredi={subject.razredi}
+                                  isSearchMode={isSearchMode}/>
                 ))}
 
                 <Typography variant="body2" align="center" sx={{mt: 4}}>
