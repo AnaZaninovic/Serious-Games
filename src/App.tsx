@@ -49,6 +49,308 @@ type TSubject = {
 // ------------------ DATA ------------------
 const SUBJECTS: TSubject[] = [
     {
+        name: "Korisne informacije",
+        razredi: [
+            {
+                name: "Svojstva i metode korištenja u nastavi",
+                gradivo: [
+                    {
+                        name: "Svojstva serious gamesa",
+                        games: [
+                            {
+                                name: "Interaktivnost",
+                                description: "Serious games omogućuju visok stupanj interaktivnosti, što znači da učenici aktivno sudjeluju u procesu učenja. Umjesto pasivnog primanja informacija, igrači preuzimaju kontrolu i donose odluke koje utječu na ishod igre, čime se povećava angažman i motivacija."
+                            },
+                            {
+                                name: "Poticaj za učenje",
+                                description: "Serious games često koriste izazove i nagrade za motivaciju učenika, čineći proces učenja zabavnim i motivirajućim. Bodovi, medalje i napredak u igri mogu učiniti učenicima stvarima jasnije, kao i naglasiti važnost određenih koncepata."
+                            },
+                            {
+                                name: "Realizam",
+                                description: "Serious games često uključuju simulacije stvarnih situacija, poput upravljanja firmom, istraživanja ekoloških problema ili vođenja društvenih politika. Ove igre omogućuju učenicima da razumiju složene sustave i situacije kroz praktično iskustvo, čime se povezuje teorija s realnim svijetom."
+                            },
+                            {
+                                name: "Prilagodljivost",
+                                description: "Većina serious gamesa omogućuje prilagodbu različitim potrebama učenika. Igre mogu biti postavljene na različite razine težine, pružajući odgovarajući izazov svim učenicima bez obzira na njihov početni nivo. Također, igre mogu biti dizajnirane tako da podržavaju različite stilove učenja."
+                            },                            
+                        ],
+                    },
+                    {
+                        name: "Korištenje serious gamesa u nastavi",
+                        games: [
+                            {
+                                name: "Učenje kroz igru",
+                                description: "Korištenje igara u nastavi omogućuje učenicima da uče kroz igru, što povećava njihovu angažiranost i učinak. Igra omogućuje učenicima da primijene svoje znanje u realnim scenarijima, čime se produbljuje razumijevanje predmeta i razvija kritičko razmišljanje."
+                            },
+                            {
+                                name: "Simulacije i eksperimenti",
+                                description: "Simulacije unutar igara pružaju studentima priliku za testiranje teorija i eksperimentiranje u sigurnom okruženju. Na primjer, igra koja simulira upravljanje ekonomijom omogućuje učenicima da testiraju različite strategije i vide njihove posljedice bez stvarnog rizika."
+                            },
+                            {
+                                name: "Razvijanje timskih vještina",
+                                description: "Neke igre, posebno one koje uključuju timski rad, mogu pomoći učenicima u razvijanju vještina suradnje, komunikacije i zajedničkog donošenja odluka. Igre koje zahtijevaju međusobnu suradnju mogu poboljšati socijalne vještine i izgraditi zajedništvo među učenicima."
+                            },
+                            {
+                                name: "Poticanje samostalnog učenja",
+                                description: "Serious games također potiču učenike da preuzmu odgovornost za vlastito učenje. Kroz povratne informacije i napredak u igri, učenici mogu samostalno pratiti svoj napredak i donositi odluke o tome kako će nastaviti učiti i rješavati zadatke."
+                            },
+                            {
+                                name: "Fleksibilnost u nastavi",
+                                description: "Serious games mogu se lako integrirati u nastavu na različite načine. Mogu se koristiti za obogaćivanje redovnih lekcija, kao i za dodatne aktivnosti ili izazove, što učiteljima omogućuje da kreativno pristupe podučavanju i prilagode igru specifičnim potrebama učeničke skupine."
+                            },
+                            {
+                                name: "Evaluacija i povratne informacije",
+                                description: "Serious games također omogućuju učiteljima da prate napredak učenika kroz evaluaciju unutar igre. Mnoge igre sadrže analitičke alate koji prate učinak učenika, što omogućava učiteljima da prepoznaju snage i slabosti učenika te prilagode nastavu."
+                            },
+                        ]
+                    }
+                ],
+            },
+            {
+                name: "Sve je lakše s drugima, uključite se u zajednice praktičara",
+                gradivo: [
+                    {
+                        name: "Zajednice praktičara",
+                        games: [
+                            {
+                                name: "Games for Change",
+                                description:
+                                    'Globalna zajednica fokusirana na razvoj i upotrebu igara za edukaciju, društveni utjecaj i svjesnost o važnim temama.',
+                                link: "https://www.gamesforchange.org/",
+                            },
+                            {
+                                name: "Serious Games Society (SGS)",
+                                link: "https://seriousgamessociety.org/",
+                                description: "Organizacija koja okuplja istraživače i edukatore za promicanje razvoja i istraživanja ozbiljnih igara."
+                            },
+                            {
+                                name: "Educational Games Research Group (EGRG)",
+                                link: "http://www.educationalgamesresearch.com/",
+                                description: "Webinari, materijali za nastavnike i članci o metodama učenja uz igre."
+                            },
+                            
+                        ],
+                    },
+                    {
+                        name: "Online grupe i forumi",
+                        games: [
+                            {
+                                name: "Reddit: Serious Gamessdf",
+                                link: "https://www.reddit.com/r/SeriousGames/",
+                                description: "Forum na Redditu posvećen ozbiljnim igrama i njihovoj primjeni u obrazovanju."
+                            },
+                            {
+                                name: "LinkedIn Group: All about Digital Learning: Serious Games, 3D Simulations",
+                                description: "Profesori i stručnjaci iz obrazovanja dijele svoja iskustva u korištenju serious games.",
+                                link: "https://www.linkedin.com/groups/5165604/"
+                            },
+                        ],
+                    },
+                    {
+                        name: "Kako pridonijeti zajednicama?",
+                        games: [
+                            {
+                                name: "Sudjelujte na konferencijama:",
+                                description: "Primjerice, Games for Change Festival ili Serious Play Conference pružaju priliku za razmjenu ideja i učenje od stručnjaka."
+                            },
+                            {
+                                name: "Podijelite vlastite projekte: ",
+                                description: "Prezentirajte iskustva s primjenom ozbiljnih igara ili razvijenih rješenja na platformama kao što su LinkedIn ili Games for Change."
+                            },
+                            {
+                                name: "Pridružite se online webinarima i radionicama: ",
+                                description: "Većina gore navedenih zajednica organizira online događaje o razvoju i upotrebi ozbiljnih igara."
+                            },
+                            {
+                                name: "Razvijajte vlastite igre i testirajte ih:",
+                                description: "Zajednice često traže sudionike za testiranje igara te pružaju povratne informacije i savjete."
+                            }
+                        ],
+                    }
+                ],
+            },
+            {
+                "name": "Želite napraviti vlastiti Serious Game?",
+                "gradivo": [
+                    {
+                        "name": "Planiranje igre",
+                        "games": [
+                            {
+                                "name": "Definiranje ciljeva",
+                                "description": "Prvi korak u izradi serious game je jasno definiranje cilja. Ciljevi mogu uključivati obrazovne ciljeve (npr. učenje povijesti ili jezika), razvoj specifičnih vještina (npr. kritičko mišljenje ili kreativnost) ili simulaciju stvarnih situacija (npr. klimatske promjene ili upravljanje resursima)."
+                            },
+                            {
+                                "name": "Odabir ciljne publike",
+                                "description": "Razvoj uspješne serious game započinje razumijevanjem ciljne publike. Ključno je definirati tko će igrati igru, kako bi sadržaj bio prilagođen njihovim potrebama i interesima. Dobna skupina igrača, njihova razina znanja i osobni interesi igraju značajnu ulogu u oblikovanju igre. Na primjer, igre za djecu trebaju sadržavati jednostavna pravila i vizualno privlačne elemente, dok su igre za odrasle složenije i tematski dublje. Ako izrađujete igru za ljubitelje povijesti, možete osmisliti scenarije koji rekonstruiraju povijesne događaje ili omogućuju simulaciju poznatih bitaka, čime se dodatno angažira ciljana publika."
+                            },
+                            {
+                                "name": "Postavljanje mjerljivih ciljeva",
+                                "description": "Kako biste osigurali učinkovitost igre, važno je definirati jasne i mjerljive ciljeve. Ciljevi trebaju biti specifični i povezani s ishodima učenja ili vještinama koje igrači trebaju razviti tijekom igranja. Primjerice, obrazovni cilj može biti da igrači uspješno identificiraju ključne uzroke industrijske revolucije nakon završetka igre. Osim toga, ciljevi poput postotka uspješno riješenih zagonetki unutar određenog vremena omogućuju praćenje napretka i prilagodbu igre prema potrebama igrača."
+                            },
+                            {
+                                "name": "Resursi i ograničenja",
+                                "description": "Svaki razvojni proces mora uzeti u obzir dostupne resurse i ograničenja. Prilikom planiranja, razmotrite vrijeme koje imate na raspolaganju, dostupne alate i tehnologiju, kao i budžet za projekt. Ako imate ograničene resurse, alati poput Scratcha ili Construct 3 mogu biti idealni jer omogućuju jednostavno kreiranje interaktivnih igara bez potrebe za naprednim programiranjem. Uz dobro planiranje resursa, čak i manji timovi mogu ostvariti visoku razinu kvalitete."
+                            },
+                            {
+                                "name": "Resursi i ograničenja",
+                                "description": "Svaki razvojni proces mora uzeti u obzir dostupne resurse i ograničenja. Prilikom planiranja, razmotrite vrijeme koje imate na raspolaganju, dostupne alate i tehnologiju, kao i budžet za projekt. Ako imate ograničene resurse, alati poput Scratcha ili Construct 3 mogu biti idealni jer omogućuju jednostavno kreiranje interaktivnih igara bez potrebe za naprednim programiranjem. Uz dobro planiranje resursa, čak i manji timovi mogu ostvariti visoku razinu kvalitete."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Odabir vrste igre",
+                        "games": [
+                            {
+                                "name": "Kviz igre",
+                                "description": "Kviz igre su idealne za testiranje znanja i pomažu u učenju činjenica kroz brzo ponavljanje. Primjeri alata za izradu kvizova uključuju Kahoot! i Quizizz."
+                            },
+                            {
+                                "name": "Simulacije",
+                                "description": "Simulacije omogućuju učenicima istraživanje stvarnih situacija poput znanstvenih eksperimenata ili ekonomskih modela. PhET Interactive Simulations i SimCity su popularni primjeri."
+                            },
+                            {
+                                "name": "Role-playing igre (RPG)",
+                                "description": "RPG igre potiču učenike da preuzmu različite uloge i donose odluke u simuliranim situacijama. Primjeri uključuju Classcraft ili Minecraft Education Edition."
+                            },
+                            {
+                                "name": "Puzzles i slagalice",
+                                "description": "Slagalice i puzzles igre pomažu u razvoju logičkog razmišljanja i rješavanja problema. Primjeri uključuju portal igre i Monument Valley."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Razvoj sadržaja i pravila igre",
+                        "games": [
+                            {
+                                "name": "Kreiranje narativa",
+                                "description": "Ako vaša igra ima priču (npr. RPG), osmislite osnovnu radnju i likove. Primjerice, ako je igra temeljena na povijesti, možete stvoriti likove koji će putovati kroz povijesna razdoblja."
+                            },
+                            {
+                                "name": "Postavljanje pravila",
+                                "description": "Pravila definiraju kako igra funkcionira i kako igrači napreduju. Važno je osigurati balans između izazova i intuitivnosti. Pravila mogu uključivati zadatke koje igrači trebaju ispuniti, uvjete za prelazak na sljedeću razinu ili način osvajanja bodova. Fleksibilnost je ključna – omogućite opcije za početnike i napredne igrače."
+                            },
+                            {
+                                "name": "Povratne informacije i nagrade",
+                                "description": "Povratne informacije igračima pokazuju njihove uspjehe i pogreške te ih usmjeravaju prema ciljevima. One mogu biti trenutačne, poput savjeta ili rezultata, dok nagrade – bodovi, otključavanje novih razina ili priče – motiviraju nastavak igranja. Dobar sustav nagrađivanja potiče igrače na učenje i eksperimentiranje."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Alati za izradu igara",
+                        "games": [
+                            {
+                                "name": "Scratch",
+                                "description": "Scratch je jednostavan alat za izradu interaktivnih priča, igara i animacija. Idealan za početnike.",
+                                "link": "https://scratch.mit.edu/"
+                            },
+                            {
+                                "name": "GameSalad",
+                                "description": "Vizualni alat za stvaranje jednostavnih igara bez kodiranja. Pogodan za edukacijske projekte.",
+                                "link": "https://gamesalad.com/"
+                            },
+                            {
+                                "name": "Construct 3",
+                                "description": "Alat za izradu 2D igara bez programiranja, s naglaskom na brzinu implementacije u obrazovni kontekst.",
+                                "link": "https://construct.net/"
+                            },
+                            {
+                                "name": "Unity",
+                                "description": "Platforma za razvoj složenijih igara uz osnovno znanje programiranja (C#).",
+                                "link": "https://unity.com/"
+                            },
+                            {
+                                "name": "Kahoot!",
+                                "description": "Jednostavan alat za izradu edukativnih kvizova s mogućnošću igranja u stvarnom vremenu.",
+                                "link": "https://kahoot.com/"
+                            },
+                            {
+                                "name": "Quizizz",
+                                "description": "Alat za prilagodljive kvizove koji omogućuje praćenje napretka učenika.",
+                                "link": "https://quizizz.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Testiranje igre",
+                        "games": [
+                            {
+                                "name": "Beta testiranje",
+                                "description": "Pozovite kolege, učitelje ili učenike da isprobaju igru. Zabilježite njihove povratne informacije o tehničkim problemima, pravilima i igračkom iskustvu. Ovo je ključna faza za uočavanje nesporazuma i potencijalnih grešaka prije široke distribucije."
+                            },
+                            {
+                                "name": "Ispitivanje izvedbe i tehničkih problema",
+                                "description": "Testirajte izvedbu igre na različitim uređajima i provjerite da li se učitava brzo, bez grešaka. Fokusirajte se na tehničke aspekte poput brzine, stabilnosti i kompatibilnosti na mobilnim uređajima i računalima."
+                            },
+                            {
+                                "name": "Analiza korisničkog iskustva",
+                                "description": "Pitajte igrače o njihovim dojmovima. Provjerite koliko je igra intuitivna i zabavna, te gdje su naišli na poteškoće. Poboljšajte sučelje i upute kako bi igra bila lakša za korištenje."
+                            },
+                            {
+                                "name": "Iterativno testiranje i unapređenje",
+                                "description": "Testiranje treba biti kontinuiran proces. Na temelju povratnih informacija, unesite izmjene i ponovo testirajte. Ovaj ciklus omogućuje stalno poboljšanje igre i prilagodbu potrebama korisnika."
+                            },
+                        ]
+                    },
+                    {
+                        "name": "Implementacija igre u nastavu",
+                        "games": [
+                            {
+                                "name": "Kao dio lekcija",
+                                "description": "Igru možete koristiti kao alat za ponavljanje gradiva ili motivaciju. Na ovaj način igra postaje dinamičan način za osnaživanje teorijskog znanja učenika."
+                            },
+                            {
+                                "name": "Kao timska aktivnost",
+                                "description": "Potaknite učenike na suradnju u igri koja zahtijeva zajedničko donošenje odluka i rješavanje zadataka. Timskim igrama možete poboljšati komunikacijske vještine i timski rad."
+                            },
+                            {
+                                "name": "Kao alat za evaluaciju",
+                                "description": "Kroz igre možete pratiti napredak učenika i testirati njihove vještine u realnom vremenu. Koristite rezultate igre za evaluaciju razumijevanja gradiva i predložite individualizirane zadatke."
+                            },
+                            {
+                                "name": "Kao motivacija za učenike",
+                                "description": "Igra može poslužiti kao snažan motivacijski alat, angažirajući učenike kroz zabavu i izazove. Kroz igre učenici mogu postati više motivirani za sudjelovanje u nastavi i učenju."
+                            },
+                            {
+                                "name": "Kao nagrada za postignuća",
+                                "description": "Korištenje igre kao nagrade za uspješne zadatke ili kao završnu aktivnost može pomoći u jačanju pozitivnog ponašanja i učiniti nastavu zanimljivijom."
+                            },
+                        ]
+                    },
+                    {
+                        "name": "Pratite napredak i prilagodite",
+                        "games": [
+                            {
+                                "name": "Analiza rezultata",
+                                "description": "Redovito pratite kako učenici reagiraju na igru i analizirajte njihovu angažiranost. Na temelju njihovih reakcija, identificirajte područja koja trebaju poboljšanje i prilagodite igru kako bi bolje odgovarala njihovim potrebama."
+                            },
+                            {
+                                "name": "Povratne informacije od učenika",
+                                "description": "Prikupljajte povratne informacije od učenika o igri, što im se svidjelo, a što ne. Ove informacije su ključne za prilagodbu sadržaja igre i poboljšanje korisničkog iskustva."
+                            },
+                            {
+                                "name": "Praćenje napretka u igri",
+                                "description": "Obratite pažnju na učeničke rezultate i napredak u igri. Ako učenici ne napreduju kako se očekivalo, možda ćete morati prilagoditi izazove ili upute za jasnije razumijevanje ciljeva igre."
+                            },
+                            {
+                                "name": "Uključivanje novih elemenata",
+                                "description": "Na temelju povratnih informacija i analize, u igru možete dodavati nove elemente, kao što su dodatni zadaci ili nove razine težine. Ova prilagodba održava igru izazovnom i motivirajućom za učenike."
+                            },
+                            {
+                                "name": "Redovito ažuriranje igre",
+                                "description": "Osigurajte da igra bude ažurirana i relevantna s obzirom na napredak u nastavi. Redovitim prilagodbama igre možete zadržati interes učenika i osigurati da ostane u skladu s obrazovnim ciljevima."
+                            },
+                            {
+                                "name": "",
+                                "description": ""
+                            },
+                        ]
+                    }
+                ]
+            }
+            
+        ],
+    },
+    {                    
         name: "Fizika",
         razredi: [
             {
@@ -73,10 +375,6 @@ const SUBJECTS: TSubject[] = [
                                 link: "https://www.eslgamesplus.com/si-units-and-measurement-science-game/",
                                 description:
                                     "SI Units and Measurement, Science Game – Interaktivna igra za testiranje znanja o osnovnim SI jedinicama i njihovim primjenama.",
-                            },
-                            {
-                                name: "Pogreške u mjerenju",
-                                description: "(Nema linka, samo naslov poglavlja / gradiva.)",
                             },
                         ],
                     },
@@ -2055,7 +2353,7 @@ const GradivoPanel: React.FC<TGradivo> = ({name, games, isSearchMode}) => {
                                         color="primary"
                                         onClick={() => window.open(game.link, "_blank")}
                                     >
-                                        Otvori igru
+                                        Otvori
                                     </Button>
                                 </Box>
                             )}
@@ -2233,7 +2531,7 @@ const App: React.FC = () => {
             <CssBaseline/>
             <Container maxWidth="lg" sx={{py: 4}}>
                 <Typography variant="h3" align="center" gutterBottom>
-                    Igre po Razredima i Gradivu
+                    Serious Games Edukacijski Portal
                 </Typography>
                 <Typography variant="subtitle1" align="center" paragraph>
                     Kliknite na predmet, zatim odaberite razred i gradivo kako biste pronašli
@@ -2245,6 +2543,11 @@ const App: React.FC = () => {
                 {toShow.map((subject) => (
                     <SubjectPanel key={subject.name} name={subject.name} razredi={subject.razredi} isSearchMode={isSearchMode}/>
                 ))}
+
+                <Typography variant="body2" align="center" sx={{mt: 4}}>
+                    &copy; Tehnologije E-Učenja Serious Games
+                </Typography>
+
             </Container>
         </ThemeProvider>
     );
